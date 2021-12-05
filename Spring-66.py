@@ -18,7 +18,7 @@ namez = input("c: compress or e: extract? ")
 #@Author Jurijus pacalovas
 class compression:
        
-	def cryptograpy_compression4(self):
+        def cryptograpy_compression4(self):
                 
                 self.name = "Written: Jurijus pacalovas Date: 29/09/2021 18:06"
                 
