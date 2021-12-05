@@ -346,7 +346,6 @@ class compression:
 	                                    if T3==1 and T4>=2:
 	                                    	T4=T4-2
 	                                    	T8=T4
-	                                    	T4=0
 	                                    	T5=T3
 	                                    	T7=T7+1
 	                                    	T1=T7
