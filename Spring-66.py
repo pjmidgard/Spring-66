@@ -318,7 +318,7 @@ class compression:
                                   
                                     
                                     
-                                    sda10="1"+sda3
+                                    sda10=sda3
                                    
                                     T6 = int(sda10, 2)
                                     T7=1
