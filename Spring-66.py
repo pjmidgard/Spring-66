@@ -361,7 +361,7 @@ class compression:
                                     sda17=sda17[1:]
                                     
                                     if g==2:
-                                    	sda17=sda3
+                                    	sda17=sda3[8:]
                                     	
 
                                     lenf=len(sda17)
