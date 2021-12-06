@@ -231,6 +231,9 @@ class compression:
                                     if Circle_times2==0:
                                            
                                            g=1
+                                           
+                                    if sda2[0:8]=="01111111": 
+                                    	g=2       
 
                                     if g==1:
 
@@ -325,6 +328,10 @@ class compression:
                                     T1=T7
                                     T8=T4
                                     
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    
                                     while T8!=T6:
 	                                    T2=T1%2
 	                                    T3=T1
@@ -344,7 +351,7 @@ class compression:
 
 	                                    	
 	                                    if T3==1 and T4>=2:
-	                                    	T4=T4-2
+	                                    	T4=T4
 	                                    	T8=T4
 	                                    	T5=T3
 	                                    	T7=T7+1
@@ -352,6 +359,10 @@ class compression:
 
                                     sda17=bin(T7)[2:]     
                                     sda17=sda17[1:]
+                                    
+                                    if g==2:
+                                    	sda17=sda3
+                                    	
 
                                     lenf=len(sda17)
                                             
@@ -462,17 +473,52 @@ class compression:
 	                                    
 	                                    	
 	                                    if T3==1 and T4>=2:
-	                                    	T4=T4-2
+	                                    	T4=T4
 	                                    	T5=T3
 	                                    	
 	                                    	
 	                                    
 	                                  
+	                               
+                                    T7=1
+                                    T1=T7
+                                    T8=T4
+                                    T6=T4
+                                    
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    
+                                    while T8!=T6:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
 	                                    	
-                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4-2
+	                                    	T8=T4
+	                                    	T5=T3
+	                                    	T7=T7+1
+	                                    	T1=T7	
 
                                     
-                                    sda17=bin(T4)[2:]      
+                                
+                                    
+                                     
+                                                
                                           
                                     sda6=sda4
                                     sda4=""
@@ -508,8 +554,15 @@ class compression:
                                         if  Circle_times2==1:
                                             #print(lenf6-1)
 
+                                            if T7==T1:
+                                           	sda17=bin(T4)[2:]
+                                           	sda17="1"+sda17+"1"
                                             
-                                            sda17="1"+sda17+"1"
+                                           else:
+                                               
+                                               sda17="01111111"+sda17
+                                           
+                                            	
                                             
                                             lenf=len(sda17)
                                             
