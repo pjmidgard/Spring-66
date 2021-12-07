@@ -385,7 +385,7 @@ class compression:
 	                                    	T4=0	
 
                                     sda17=bin(T7)[2:]    
-                                    sda17=sda17[1:] 
+                                    sda17=sda17[1:]
                                     
                                    
                                    
@@ -475,7 +475,7 @@ class compression:
                                     T4=0
                                     T5=0
                                   
-                                    
+                                   
                                     
                                     sda10="1"+sda3
                                    
@@ -586,7 +586,7 @@ class compression:
                                         if  Circle_times2==1:
                                             #print(lenf6-1)
 
-                                            if T7==T1:
+                                            if T7==T9:
                                             	sda17=bin(T9)[2:]
                                             	sda17="1"+sda17+"1"
                                             
