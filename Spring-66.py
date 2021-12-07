@@ -227,6 +227,7 @@ class compression:
                                     sda19=""
                                     
                                     ei=0
+                                   
 
                                     if Circle_times2==0:
                                            
@@ -270,7 +271,7 @@ class compression:
 
                                             sda2=sda2[1:lenf5-1]
 
-                                    g=0
+                                    
 
                                     sda3=sda2
 
@@ -315,18 +316,22 @@ class compression:
 
                                     Spin=0
                                     
-                                    T3=1
-                                    T4=0
-                                    T5=0
+                                   
+                                   
+                                   
                                   
                                     
                                     
-                                    sda10=sda3
+                                    sda10=sda2
+                                   
                                    
                                     T6 = int(sda10, 2)
+                                    
                                     T7=1
-                                    T1=T7
-                                    T8=T4
+                                    T1=1
+                                    T8=0
+                                  
+                                    
                                     
                                     T3=1
                                     T4=0
@@ -356,9 +361,14 @@ class compression:
 	                                    	T5=T3
 	                                    	T7=T7+1
 	                                    	T1=T7
+	                                    	T4=0	
 
                                     sda17=bin(T7)[2:]     
+                                    
+                                   
                                     sda17=sda17[1:]
+                                   
+                                  
                                     
                                     if g==2:
                                     	sda17=sda3[8:]
@@ -380,7 +390,7 @@ class compression:
 
                                                                                       
 
-                                    sda17=szx+sda17
+                                   
                                       
                                          
                                     sda2=sda17
@@ -392,7 +402,7 @@ class compression:
                                        
                                          n = int(sda17, 2)
                                          qqwslenf=len(sda17)
-                                         qqwslenf=(qqwslenf/8)*2
+                                         qqwslenf=(qqwslenf//8)*2
                                          qqwslenf=str(qqwslenf)
                                          qqwslenf="%0"+qqwslenf+"x"
                                          jl=binascii.unhexlify(qqwslenf % n)
@@ -481,9 +491,10 @@ class compression:
 	                                  
 	                               
                                     T7=1
-                                    T1=T7
-                                    T8=T4
+                                    T1=1
+                                    T8=0
                                     T6=T4
+                                    T9=T4
                                     
                                     T3=1
                                     T4=0
@@ -508,11 +519,12 @@ class compression:
 
 	                                    	
 	                                    if T3==1 and T4>=2:
-	                                    	T4=T4-2
+	                                    	T4=T4
 	                                    	T8=T4
 	                                    	T5=T3
 	                                    	T7=T7+1
-	                                    	T1=T7	
+	                                    	T1=T7
+	                                    	T4=0	
 
                                     
                                 
@@ -555,7 +567,7 @@ class compression:
                                             #print(lenf6-1)
 
                                             if T7==T1:
-                                            	sda17=bin(T4)[2:]
+                                            	sda17=bin(T9)[2:]
                                             	sda17="1"+sda17+"1"
                                             
                                             else:
