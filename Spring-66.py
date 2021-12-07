@@ -291,6 +291,9 @@ class compression:
                                         elif sda2[lenf5-1:lenf5]=="1":
 
                                             sda2=sda2[1:lenf5-1]
+                                        else:
+                                        	 raise SystemExit
+                                        	
 
                                     
 
@@ -347,6 +350,8 @@ class compression:
                                    
                                    
                                     T6 = int(sda10, 2)
+                                    if T6==0:
+                                    	 raise SystemExit
                                     
                                     T7=1
                                     T1=1
