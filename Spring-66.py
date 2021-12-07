@@ -384,7 +384,10 @@ class compression:
 	                                    	T1=T7
 	                                    	T4=0	
 
-                                    sda17=bin(T7)[2:]    
+                                    sda17=bin(T7)[2:]   
+                                    if sda17[0:1]=="0":
+                                    	 raise SystemExit
+                                   sda17=sda17[1:]
                                 
                                     
                                    
@@ -477,7 +480,7 @@ class compression:
                                   
                                    
                                     
-                                    sda10=sda3
+                                    sda10="1"+sda3
                                    
                                     T1 = int(sda10, 2)
                                     T10=T1
