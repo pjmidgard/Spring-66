@@ -387,7 +387,7 @@ class compression:
                                     sda17=bin(T7)[2:]   
                                     if sda17[0:1]=="0":
                                     	 raise SystemExit
-                                   sda17=sda17[1:]
+                                    sda17=sda17[1:]
                                 
                                     
                                    
