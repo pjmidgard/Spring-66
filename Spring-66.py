@@ -384,10 +384,11 @@ class compression:
 	                                    	T1=T7
 	                                    	T4=0	
 
-                                    sda17=bin(T7)[2:]     
+                                    sda17=bin(T7)[2:]    
+                                    sda17=sda17[1:] 
                                     
                                    
-                                    sda17=sda17[1:]
+                                   
                                    
                                   
                                     
@@ -410,7 +411,7 @@ class compression:
                                                                                       
 
                                    
-                                      
+                                    sda17=szx+sda17
                                          
                                     sda2=sda17
                                     Circle_times2=Circle_times2+1
