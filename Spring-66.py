@@ -385,11 +385,7 @@ class compression:
 	                                    	T4=0	
 
                                     sda17=bin(T7)[2:]    
-                                    if sda17[0:1]=="0":
-                                    	  raise SystemExit
-                                    	
-                                    sda17=sda17[1:]
-                                    
+                                
                                     
                                    
                                    
@@ -481,9 +477,10 @@ class compression:
                                   
                                    
                                     
-                                    sda10="1"+sda3
+                                    sda10=sda3
                                    
                                     T1 = int(sda10, 2)
+                                    T10=T1
                                     
                                     while T5!=1:
 	                                    T2=T1%2
@@ -590,7 +587,7 @@ class compression:
                                         if  Circle_times2==1:
                                             #print(lenf6-1)
 
-                                            if T7==T9:
+                                            if T7==T10:
                                             	sda17=bin(T9)[2:]
                                             	sda17="1"+sda17+"1"
                                             
