@@ -555,12 +555,11 @@ class compression:
                                             #print(lenf6-1)
 
                                             if T7==T1:
-                                           	sda17=bin(T4)[2:]
-                                           	sda17="1"+sda17+"1"
+                                            	sda17=bin(T4)[2:]
+                                            	sda17="1"+sda17+"1"
                                             
-                                           else:
-                                               
-                                               sda17="01111111"+sda17
+                                            else:
+                                             	sda17="01111111"+sda17
                                            
                                             	
                                             
