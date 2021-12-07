@@ -590,7 +590,7 @@ class compression:
                                             	sda17="1"+sda17+"1"
                                             
                                             else:
-                                             	sda17="01111111"+sda17
+                                             	sda17="01111111"+sda3
                                            
                                             	
                                             
