@@ -529,7 +529,7 @@ class compression:
                                     T4=0
                                     T5=0
                                     
-                                    while T8!=T6:
+                                    while T7!=T10:
 	                                    T2=T1%2
 	                                    T3=T1
 	                                    
@@ -595,7 +595,7 @@ class compression:
                                         if  Circle_times2==1:
                                             #print(lenf6-1)
 
-                                            if T7==T10:
+                                            if T6==T8:
                                             	sda17=bin(T9)[2:]
                                             	sda17="1"+sda17+"1"
                                             
