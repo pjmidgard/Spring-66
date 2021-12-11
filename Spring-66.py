@@ -249,17 +249,7 @@ class compression:
                                     	 x2 = time()
                                     	 x3=x2-x
                                     	 return print(x3)
-                                        
-                                    	   
-                                    	
-                                    	
-                                    
-                                    
 
-                        
-                                        	
-
-                                    
 
                                     sda3=sda2
 
@@ -405,9 +395,6 @@ class compression:
 	                               
                                     T7=T7-1
                                     
-                                    
-                                    
-                                  
                                     sda17=bin(T7)[2:]
                                     
                                     if sda17=="0":
@@ -497,14 +484,6 @@ class compression:
                                     T4=0
                                     T5=0
                                   
-                                   
-                                    	                      
-                                    	                                   
-                                    	                                   
-                                    	                                   
-                                    	                                   
-                                    
-                                   
                                     sda10="1"+sda3
                                            
                                     
@@ -528,11 +507,7 @@ class compression:
 	                                    	T3=(T3*3)+1
 	                                    	T1=T3
 	                                    	T4=T4+1
-	                                    	
-	                                    	
-	                                    	
-	                                    
-	                                    	
+	                                    		
 	                                    if T3==1 and T4>=2:
 	                                    	T4=T4
 	                                    	T5=T3
@@ -599,37 +574,6 @@ class compression:
 	                                    	T12=T12+1
 	                               
                                     T7=T7-1
-                                    
-                                    
-	                                    	
-	                                   
-	           
-                                    
-                                    
-                  
-	                                   
-	                                  
-	                                  
-	                                    	
-	                                    	
-	                                 
-	                                    	
-	                                    	
-	           
-         
-                                    
-                                   
-                                    
-                                    
-                                    
-                                   
-       
-                                  
-                                    
-                                    
-                                   
-                                    
-                                   
                                    
                                     sda6=sda4
                                     sda4=""
